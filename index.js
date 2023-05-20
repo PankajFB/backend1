@@ -31,7 +31,12 @@ app.use(cors());
 
 
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
+  res.send("Hello from the server");
+});
+
+
+app.get('/api', (req, res) => {
   res.send("Hello from the server");
 });
 
